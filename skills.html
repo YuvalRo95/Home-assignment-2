@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Yuval Roffe - Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <script>
+      function myFunc() {
+        let tmp = document.querySelector(".myList");
+        if (tmp.style.display == "none") {
+          tmp.style.display = "block";
+          return;
+        }
+        tmp.style.display = "none";
+      }
+    </script>
+    <header class="headpage">
+      <nav id="navbar" class="navbar">
+        <div class="container">
+          <h1 class="logo">Yuval Roffe - Portfolio</h1>
+          <div class="nav-links-mobile">
+            <div class="mobile-icon" onclick="myFunc()">&#9776;</div>
+            <ul style="display: none" class="myList">
+              <li><a href="home.html">Home</a></li>
+              <li><a href="about.html">About</a></li>
+              <li><a href="skills.html" class="active">Skills / Resume</a></li>
+              <li><a href="projects.html">Projects</a></li>
+            </ul>
+          </div>
+          <ul class="nav-links">
+            <li><a href="home.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="skills.html" class="active">Skills / Resume</a></li>
+            <li><a href="projects.html">Projects</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <section id="home">
+        <div class="container">
+          <h2>Skills</h2>
+          <ul class="skill-list">
+            <li><strong>Programming Languages:</strong> C++, C#, HTML+CSS</li>
+            <li><strong>Database Management:</strong> SQL</li>
+            <li>
+              <strong>Software Proficiency:</strong> MS Office (Word, Excel,
+              PowerPoint), SPSS
+            </li>
+          </ul>
+
+          <h2>Attributes</h2>
+          <p>
+            With a diverse skill set, I bring proficiency in programming
+            languages such as C++, C#, and HTML+CSS. My expertise extends to
+            database management using SQL, and I am adept at utilizing software
+            tools like MS Office (Word, Excel, PowerPoint) and SPSS. Known for
+            effective teamwork and creativity, I approach problem-solving with a
+            proactive mindset. I am eager to contribute my technical expertise
+            and provide practical solutions for real-world scenarios.
+          </p>
+          <h2>Download Resume</h2>
+          <p>
+            <a href="YuvalRoffe-CV.pdf" download="YourResume.pdf" class="cv"
+              >Click Here</a
+            >
+          </p>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div>
+        <h3>Contact Me</h3>
+        <p>Email: yuvalroffe@gmail.com</p>
+        <p>Phone: +972 50 240 4484</p>
+        <p>
+          Social Media:
+          <a
+            href="https://www.facebook.com/yuvalro0"
+            class="fa fa-facebook"
+            target="_blank"
+          ></a>
+          <a
+            href="https://www.linkedin.com/in/yuval-roffe/"
+            class="fa fa-linkedin"
+            target="_blank"
+          ></a>
+        </p>
+      </div>
+    </footer>
+  </body>
+</html>

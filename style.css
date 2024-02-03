@@ -1,0 +1,205 @@
+body {
+  background-color: #f9f9f9;
+  font-family: "Georgia", serif;
+  color: #333;
+  margin: 0;
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  text-align: center;
+}
+
+.navbar {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 20px 0;
+}
+.skill-list {
+  list-style: none;
+}
+.logo {
+  font-size: 36px;
+  color: #333;
+  margin: 0;
+}
+
+.nav-links {
+  display: flex;
+  gap: 20px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-links li a {
+  display: flex;
+  justify-content: center;
+  color: #555;
+  font-size: 18px;
+  padding: 10px 15px;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.nav-links li a:hover {
+  color: #c42428;
+}
+
+.nav-links-mobile {
+  display: none;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  margin-top: 10px;
+  overflow: hidden;
+  width: 40%;
+  margin-left: 30%;
+}
+
+.nav-links-mobile ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.nav-links-mobile li a {
+  color: #333;
+  font-size: 18px;
+  padding: 15px;
+  text-decoration: none;
+  display: block;
+  transition: color 0.3s ease;
+}
+.skill-list {
+  font-size: x-large;
+  line-height: 1.5;
+}
+.cv {
+  color: #333;
+  font-size: 18px;
+  padding: 15px;
+  text-decoration: underline;
+}
+.nav-links-mobile li a:hover {
+  color: #c42428;
+  background-color: #ddd;
+}
+
+.mobile-icon {
+  display: none;
+  cursor: pointer;
+}
+.fa {
+  padding: 10px;
+  font-size: 20px;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+}
+.fa:hover {
+  opacity: 0.7;
+}
+.fa-facebook {
+  background: #3b5998;
+  color: white;
+}
+.fa-linkedin {
+  background: #007bb5;
+  color: white;
+}
+
+@media screen and (max-width: 700px) {
+  .nav-links-mobile {
+    display: block;
+  } /* show it on small screens */
+}
+
+@media screen and (min-width: 701px) {
+  .nav-links-mobile {
+    display: none;
+  } /* hide it elsewhere */
+}
+@media screen and (min-width: 701px) {
+  .nav-links {
+    display: block;
+  } /* show it on small screens */
+}
+
+@media screen and (min-width: 0px) and (max-width: 699px) {
+  .nav-links {
+    display: none;
+  } /* hide it elsewhere */
+}
+.mobile-icon {
+  display: block;
+  font-size: 24px;
+}
+
+footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  margin-top: auto;
+  padding: 20px;
+  border-top: 2px solid #fff;
+}
+
+footer a {
+  color: white;
+}
+
+.profile-container {
+  margin: auto;
+  text-align: center;
+}
+
+.profile-container p {
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.image-container {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.image-container img {
+  max-width: 48%;
+  height: auto;
+  margin: 40px;
+}
+
+/* Additional Styling for Home Page */
+#home {
+  padding: 40px 0;
+}
+
+/* Additional Styling for Paragraphs */
+.container p {
+  font-size: 18px;
+  line-height: 1.6;
+  color: black;
+  font-size: 20px;
+  margin-bottom: 100px;
+  line-height: 2;
+}
+.container img {
+  margin: auto;
+}
+
+/* Additional Styling for Skills Page */
+#skills {
+  padding: 40px 0;
+}
+
+/* Additional Styling for Projects Page */
+#projects {
+  padding: 40px 0;
+}

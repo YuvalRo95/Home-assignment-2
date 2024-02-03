@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Yuval Roffe - Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <script>
+      function myFunc() {
+        let tmp = document.querySelector(".myList");
+        if (tmp.style.display == "none") {
+          tmp.style.display = "block";
+          return;
+        }
+        tmp.style.display = "none";
+      }
+    </script>
+    <header class="headpage">
+      <nav id="navbar" class="navbar">
+        <div class="container">
+          <h1 class="logo">Yuval Roffe - Portfolio</h1>
+          <div class="nav-links-mobile">
+            <div class="mobile-icon" onclick="myFunc()">&#9776;</div>
+            <ul style="display: none" class="myList">
+              <li><a href="home.html">Home</a></li>
+              <li><a href="about.html" class="active">About</a></li>
+              <li><a href="skills.html">Skills / Resume</a></li>
+              <li><a href="projects.html">Projects</a></li>
+            </ul>
+          </div>
+          <ul class="nav-links">
+            <li><a href="home.html">Home</a></li>
+            <li><a href="about.html" class="active">About</a></li>
+            <li><a href="skills.html">Skills / Resume</a></li>
+            <li><a href="projects.html">Projects</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <section id="about">
+        <div class="container">
+          <p>
+            I am a highly motivated 28-year-old B.Sc. student currently pursuing
+            a degree in Industrial Engineering & Management at Ruppin Academy
+            Center, with an expected graduation in 2025. My educational journey
+            includes completing full matriculation at "Danciger" High School in
+            Kiryat Shmona. In my professional journey, I've excelled in roles
+            such as Co-branch Manager at "Pull&Bear" Clothing Store from 2019 to
+            2021 and Manager at "Castro" Kiryat Shmona Clothing Store in
+            2018-2019. These experiences have honed my leadership, operations
+            management, and financial acumen. During my military service as an
+            Armoured Corps combat soldier from 2014 to 2017, I cultivated a
+            strong sense of teamwork, discipline, and adaptability.
+          </p>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div>
+        <h3>Contact Me</h3>
+        <p>Email: yuvalroffe@gmail.com</p>
+        <p>Phone: +972 50 240 4484</p>
+        <p>
+          Social Media:
+          <a
+            href="https://www.facebook.com/yuvalro0"
+            class="fa fa-facebook"
+            target="_blank"
+          ></a>
+          <a
+            href="https://www.linkedin.com/in/yuval-roffe/"
+            class="fa fa-linkedin"
+            target="_blank"
+          ></a>
+        </p>
+      </div>
+    </footer>
+  </body>
+</html>

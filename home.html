@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Yuval Roffe - Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+  />
+  <body>
+    <script>
+      function myFunc() {
+        let tmp = document.querySelector(".myList");
+        if (tmp.style.display == "none") {
+          tmp.style.display = "block";
+          return;
+        }
+        tmp.style.display = "none";
+      }
+    </script>
+    <header class="headpage">
+      <nav id="navbar" class="navbar">
+        <div class="container">
+          <h1 class="logo">Yuval Roffe - Portfolio</h1>
+          <div class="nav-links-mobile">
+            <div class="mobile-icon" onclick="myFunc()">&#9776;</div>
+            <ul style="display: none" class="myList">
+              <li><a href="home.html" class="active">Home</a></li>
+              <li><a href="about.html">About</a></li>
+              <li><a href="skills.html">Skills / Resume</a></li>
+              <li><a href="projects.html">Projects</a></li>
+            </ul>
+          </div>
+          <ul class="nav-links">
+            <li><a href="home.html" class="active">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="skills.html">Skills / Resume</a></li>
+            <li><a href="projects.html">Projects</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <section id="home">
+        <div class="container">
+          <div class="profile-container">
+            <p>
+              Hello, I'm Yuval Roffe, and welcome to my professional portfolio
+              website. I'm a 28-year-old student pursuing a degree in Industrial
+              Engineering and Management, originally from Kiryat Shmona in the
+              northern part of Israel. I excel in technology, am highly
+              organized, and possess efficiency in getting things done. I have
+              excellent social skills, am always ready to engage in
+              conversations, and build meaningful connections. Outside of
+              academics, I'm deeply passionate about sports, particularly
+              football. I lead a healthy lifestyle, regularly hitting the gym,
+              swimming twice a week, and going for runs. Football is more than
+              just a hobby; it's a passion I love indulging in whenever I can.
+              Family is incredibly important to me, and I cherish spending
+              quality time with loved ones and friends. Exploring both the local
+              and global landscapes is something I truly enjoy, as it allows me
+              to experience different cultures and create lasting memories. Feel
+              free to reach out and connect with me through my social media
+              profiles or drop me a message. I'm always open to new
+              opportunities and exciting collaborations. Let's connect and
+              explore together!
+            </p>
+            <div class="image-container">
+              <img src="yuval1.jpeg" alt="Left Image" id="img-left" />
+              <img src="yuval2.jpeg" alt="Right Image" class="img-right" />
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div>
+        <h3>Contact Me</h3>
+        <p>Email: yuvalroffe@gmail.com</p>
+        <p>Phone: +972 50 240 4484</p>
+        <p>
+          Social Media:
+          <a
+            href="https://www.facebook.com/yuvalro0"
+            class="fa fa-facebook"
+            target="_blank"
+          ></a>
+          <a
+            href="https://www.linkedin.com/in/yuval-roffe/"
+            class="fa fa-linkedin"
+            target="_blank"
+          ></a>
+        </p>
+      </div>
+    </footer>
+  </body>
+</html>
